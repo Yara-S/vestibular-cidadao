@@ -17,7 +17,7 @@ const Styles = styled.div`
   display: flex;
   justify-content: flex-end;
 
-  height: 100px;
+ 
 
   img{ 
       height: 90px;

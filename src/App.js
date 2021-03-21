@@ -17,13 +17,20 @@ function App() {
 
   useOnClickOutside(node, () => setOpen(false));
 
+  const [chosenItem, setItem] = useState('pagina_inicial') 
+
+  const changeItem = (item) => {
+    console.log(item)
+    setItem(item)
+  }
+
   return (
     <ThemeProvider theme={theme}>
       
       <>
         <GlobalStyles />
         <Header />
-        <NavigationBar/>
+        <NavigationBar item={chosenItem} changeItem={changeItem}/>
         <HomeBody />
         <div ref={node}>
           <FocusLock disabled={!open}>
@@ -32,7 +39,7 @@ function App() {
           </FocusLock>
 
         </div>
-        <Footer />
+        
 
         
          
