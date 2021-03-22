@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {QuemSomos} from './QuemSomos';
-  
+import {ComoParticipar} from './ComoParticipar';
+
 const Styles = styled.div`
 
   
@@ -9,7 +10,7 @@ const Styles = styled.div`
   margin-top: 100px;
   height: auto;
   margin-right: 20px;
- 
+
 
 
 `;
@@ -19,6 +20,8 @@ export const HomeBody = () => (
   <Styles>
     
     <QuemSomos />
+    <ComoParticipar />
+
       
     
   </Styles>

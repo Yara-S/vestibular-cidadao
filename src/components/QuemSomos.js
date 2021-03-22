@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Historia} from './Historia';
 import {Valores} from './Valores';
+import {OQueFazemos} from './OQueFazemos';
 
   
 const Styles = styled.div`
@@ -16,6 +17,9 @@ export const QuemSomos = () => (
 
       <Historia/>
       <Valores />
+      <OQueFazemos />
+      <br />
+      <br />
 
   </Styles>
 )

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel'
-
+import Fade from "react-reveal/Fade"
 
   
 const Styles = styled.div`
@@ -53,6 +53,7 @@ const Styles = styled.div`
 export const Valores = () => (
   <Styles>
   		<br/>
+  	<Fade right>
       <Carousel>
       	<Carousel.Item> 
       
@@ -90,6 +91,6 @@ export const Valores = () => (
       
 
       </Carousel>
-
+      </Fade>
   </Styles>
 )
