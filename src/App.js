@@ -9,7 +9,8 @@ import {HomeBody} from './components/HomeBody';
 import {Header} from './components/Header';
 import {Footer} from './components/Footer';
 import FocusLock from 'react-focus-lock';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styled from 'styled-components';
 function App() {
   const [open, setOpen] = useState(false);
   const node = useRef();
@@ -24,13 +25,25 @@ function App() {
     setItem(item)
   }
 
+
+  const StickyHeader = styled.div`
+
+  position: sticky;
+  top: 0;
+  
+
+
+`;
+
   return (
     <ThemeProvider theme={theme}>
       
       <>
         <GlobalStyles />
+        <StickyHeader >
         <Header />
         <NavigationBar item={chosenItem} changeItem={changeItem}/>
+        </StickyHeader>
         <HomeBody />
         <div ref={node}>
           <FocusLock disabled={!open}>

@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 
 const Styles = styled.div`
   
-
+  
   display: flex;
   justify-content: space-between;
   
