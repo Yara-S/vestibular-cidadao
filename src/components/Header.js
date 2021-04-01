@@ -7,11 +7,11 @@ import { IconContext } from "react-icons";
 
 const Styles = styled.div`
   
-  
+
   display: flex;
   justify-content: space-between;
-  
-  height: 150px;
+  background-color: white;
+  height: 100px;
 
   img{
     margin-left: 100px;
@@ -44,7 +44,7 @@ export const Header = () => (
   <Styles>
     <img src='logo.png'/>
     <div>
-    <IconContext.Provider value={{ color: "#43d690" , size: '6em', className: 'react-icons'}}>
+    <IconContext.Provider value={{ color: "#43d690" , size: '4em', className: 'react-icons'}}>
     <FaFacebookSquare />
     <FaInstagramSquare />
     </IconContext.Provider>

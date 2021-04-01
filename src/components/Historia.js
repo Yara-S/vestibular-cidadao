@@ -88,7 +88,7 @@ margin-left: 500px;
 export const Historia = () => {
   return (
   
-        <AboutSection id='about'>
+        <AboutSection >
             <Fade bottom cascade text>
               <h1>NOSSA HISTÓRIA</h1>
             

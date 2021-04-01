@@ -264,7 +264,7 @@ export const OQueFazemos = () => (
 
     <Fade right>
 
-      <div className='container-oq-a'>
+      <div className='container-oq-a' id="como_participar">
       <div className="dif">
           <div className='icon-d'>
               <p>DIFERENCIAIS</p>

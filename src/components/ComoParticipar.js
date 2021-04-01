@@ -83,7 +83,7 @@ const data_voluntarios = [{
 
 
 export const ComoParticipar = () => (
-  <Styles id="como_participar">
+  <Styles>
   <Fade top>
   <h1>Como Participar</h1>
   <br/>

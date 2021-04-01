@@ -19,7 +19,7 @@ const Styles = styled.div`
 
 
 export const HomeBody = () => (
-  <Styles>
+  <Styles id='about'>
     
     <QuemSomos />
     <ComoParticipar />

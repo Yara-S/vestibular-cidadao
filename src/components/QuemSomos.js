@@ -13,7 +13,7 @@ height: auto;
 
 
 export const QuemSomos = () => (
-  <Styles>
+  <Styles >
 
       <Historia/>
       <Valores />
