@@ -9,6 +9,7 @@ const Allcontent = styled.div`
   display: flex;
   justify-content: center;
   margin-left: 10px;
+ 
   @media screen and (max-width: 700px) {
     flex-direction: column-reverse;
     
@@ -42,7 +43,7 @@ const Allcontent = styled.div`
 
   .image-wrapper {
 
-    width: 30%;
+    
     
 
     @media screen and (max-width: 700px) {
