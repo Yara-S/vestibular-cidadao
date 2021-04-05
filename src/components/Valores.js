@@ -19,16 +19,29 @@ const Styles = styled.div`
   visibility: visible;
  }
 
+ .carousel {
+  height: 100%;
+ }
+
  .carousel-item{
 
- 	height: 400px;
+ 	height: 400px;;
  	background-color: #0e56aa;
+
+
 
  	p, ul{
  		padding-left: 35%;
  		padding-right: 35%;
  		font-size:1.5rem;
  		color: #fff
+
+    @media screen and (max-width: 700px) {
+      padding-left: 20%;
+      padding-right: 20%;
+      font-size: 1rem;
+
+    }
  	}
  	p{
  		text-align: center;

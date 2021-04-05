@@ -16,6 +16,10 @@ const Styles = styled.div`
   .container-oq-a{
     display: flex;
     justify-content: flex-end;
+
+    @media screen and (max-width: 700px){
+      justify-content: center;
+    }
   }
 
   .dif {
@@ -25,9 +29,19 @@ const Styles = styled.div`
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width: 700px) {
+      
+        width: 100%;
+        flex-direction: column
+       
+    }
+
     ul{
       text-align: left;
       padding-right: 20px;
+      @media screen and (max-width: 700px){
+        text-align: center;
+      }
     }
     ul, p {
       font-size: 1.2rem;
@@ -60,6 +74,18 @@ const Styles = styled.div`
     width: 70%
     display: flex;
     justify-content: space-around;
+
+      @media screen and (max-width: 700px) {
+      
+        width: 100%;
+        flex-direction: column;
+       
+    }
+
+
+
+
+
     .text-a{
       p{
         text-align: center;
@@ -76,9 +102,22 @@ const Styles = styled.div`
     display: flex;
     justify-content: center;
 
+      @media screen and (max-width: 700px) {
+      
+        width: 100%;
+        flex-direction: column
+        justify-content: center;
+    }
+
     ul{
       text-align: left;
       padding-right: 20px;
+
+      @media screen and (max-width: 700px){
+        text-align: center;
+      }
+
+
     }
     ul, p {
       font-size: 1.2rem;
@@ -96,6 +135,9 @@ const Styles = styled.div`
     }
     .text-m{
       width: 70%;
+      @media screen and (max-width: 700px){
+        width: auto;
+      }
 
     }
 
@@ -112,6 +154,11 @@ const Styles = styled.div`
       justify-content: center;
       align-items: center;
       margin-bottom: 20px;
+
+      @media screen and (max-width: 700px){
+        
+        width: 100%;
+      }
 
       p {
         font-size: 1.5rem;
@@ -189,7 +236,7 @@ export const OQueFazemos = () => (
                         </div>
                         <div className="text-a">
                           <p> INICIO/DURAÇÃO <br/>
-                          arço à Novembro </p>
+                          Março à Novembro </p>
                         </div>
             </div>
 

@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
+
+
+  @import 'include-media/dist/_include-media.scss';
+  
   html, body {
     margin: 0;
     padding: 0;

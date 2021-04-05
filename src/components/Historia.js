@@ -7,61 +7,55 @@ import styled from 'styled-components';
 
 const Allcontent = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-left: 10px;
-  @include media(">=phone", "<lgphone") {
+  @media screen and (max-width: 700px) {
     flex-direction: column-reverse;
+    
+
   }
-  @include media(">=lgphone", "<tablet") {
-    flex-direction: column-reverse;
-  }
-  @include media(">=tablet", "<desktop") {
-    flex-direction: column-reverse;
 
     .content {
+      
+      text-align: left
+      padding-left: 20px;
       width: 70%;
-
-      padding-right: 150px;
-
-
-    @include media(">=phone", "<lgphone") {
-      width: 100%;
-    }
-    @include media(">=lgphone", "<tablet") {
-      width: 100%;
-    }
-    @include media(">=tablet", "<desktop") {
-      width: 100%;
-    }
-
+        @media screen and (max-width: 700px) {
+          width: 100%;
+        }
 
     }
+
+
     p {
       padding-top: 10px;
       text-align: left;
       font-size: 1.5rem;
 
-      @include media(">=tablet", "<desktop") {
+      @media screen and (max-width: 700px) {
         text-align: center;
       }
     }
   }
+
+
+
   .image-wrapper {
+
     width: 30%;
+    
 
-    display: flex;
-    justify-content: flex-start;
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      display: flex;
+      
+      img{
+        max-width: 100%;
+    
+      }
+      
+    }
 
-
-    @include media(">=phone", "<lgphone") {
-      width: 100%;
-    }
-    @include media(">=lgphone", "<tablet") {
-      width: 100%;
-    }
-    @include media(">=tablet", "<desktop") {
-      width: 100%;
-    }
   }
 
     `
@@ -69,7 +63,7 @@ const Allcontent = styled.div`
 const AboutSection = styled.div`
 height: auto;
   margin-top: 100px;
-margin-left: 500px;
+
   margin-right: 50px;
       h1 {
       font-size: 3rem;
@@ -77,9 +71,11 @@ margin-left: 500px;
       text-align: left;
       padding-bottom: 10px;
       padding-left: 10px;
-      @include media(">=tablet", "<desktop") {
-        
+      @media screen and (max-width: 700px) {
+        text-align: center;
+        font-size: 2rem;
       }
+    }
 
 `
 

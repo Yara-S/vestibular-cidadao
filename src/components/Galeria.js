@@ -57,7 +57,13 @@ const photos = [
 
 const Styles = styled.div`
 
-  background-color: green;
+  background-color: #0e56aa;
+
+  h1{
+  	color: white;
+  	text-align: center;
+  	padding-top: 10px;
+  }
 
 `;
 
@@ -82,22 +88,9 @@ const closeLightbox = () => {
 
 	return (
   <Styles>
+  	<h1> GALERIA </h1>
     <div>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
+      <Gallery photos={photos} direction={"column"} />;
     </div>
       
     
