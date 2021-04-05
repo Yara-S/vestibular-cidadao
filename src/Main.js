@@ -35,7 +35,7 @@ function Main() {
   z-index: 10;
 
   .myBurguer {
-    background-color:red;
+    
   }
 
 `;
