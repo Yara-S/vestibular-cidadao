@@ -3,66 +3,49 @@ import React, { useState, useCallback } from "react";
 import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import ImageGallery from 'react-image-gallery';
+import Fade from "react-reveal/Fade"
 
-
-
-const photos = [
+const images = [
   {
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-    width: 4,
-    height: 3
+    original: 'https://picsum.photos/id/1018/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1018/250/150/',
   },
   {
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-    width: 1,
-    height: 1
+    original: 'https://picsum.photos/id/1015/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1015/250/150/',
   },
   {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-    width: 3,
-    height: 4
+    original: 'https://picsum.photos/id/1019/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/',
   },
-  {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-    width: 4,
-    height: 3
-  }
 ];
 
-
 const Styles = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
-  background-color: #0e56aa;
+  .imgHeader{
+  	display: flex;
+  	justify-content: center;
+  }
+
+
+  img {
+  	width: 200px;
+  	heigth: auto;
+  	
+  }
 
   h1{
   	color: white;
   	text-align: center;
   	padding-top: 10px;
+  }
+
+  .carrosel {
+  	background-color: #43d690
   }
 
 `;
@@ -72,27 +55,20 @@ const Styles = styled.div`
 export function Galeria() {
 
 
-	const [currentImage, setCurrentImage] = useState(0);
-const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-}, []);
-
-const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-};
-
-
 	return (
+
   <Styles>
-  	<h1> GALERIA </h1>
-    <div>
-      <Gallery photos={photos} direction={"column"} />;
+
+  <Fade left>
+
+  	<div className="imgHeader">
+  	<img src='logo.png' />
+  	</div>
+    <div className="carrosel">
+    	<h1> GALERIA </h1>
+      <ImageGallery items={images} />
     </div>
-      
+   </Fade>
     
   </Styles>
 

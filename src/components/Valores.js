@@ -7,17 +7,7 @@ import Fade from "react-reveal/Fade"
 const Styles = styled.div`
 
 
- .carousel-control-next-icon{
- 	content: '>';
- 	font-size:55px;
 
- 	height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  background-image: none;
-  visibility: visible;
- }
 
  .carousel {
   height: 100%;

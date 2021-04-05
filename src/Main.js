@@ -34,6 +34,10 @@ function Main() {
   right: 0;
   z-index: 10;
 
+  .myBurguer {
+    background-color:red;
+  }
+
 `;
 
   return (
@@ -44,15 +48,27 @@ function Main() {
         <StickyHeader >
         <Header />
         <NavigationBar item={chosenItem} changeItem={changeItem}/>
-        </StickyHeader>
-        <HomeBody  />
-        <div ref={node}>
+
+         <div ref={node}>
           <FocusLock disabled={!open}>
+            <div className="myBurguer">
             <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+            </div>
             <Menu open={open} setOpen={setOpen} id={menuId} />
           </FocusLock>
 
         </div>
+
+
+
+
+
+        </StickyHeader>
+
+
+
+        <HomeBody  />
+       
         
 
         
